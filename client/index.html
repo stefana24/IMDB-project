@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+             
+            <div class="logo">
+                <h3>MRew</h3>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a class="active" href="/">Home</a>
+                </li>
+                <li>
+                    <a href = "/movies">Movies</a>
+                </li>
+                <li>
+                    <a href = "/tvshows">TV Shows</a>
+                </li>
+                <li>
+                    <a href="/register">Register</a>
+                </li>
+                <li>
+                    <a href="/about">About Me</a>
+                </li>
+            </ul>
+
+      
+        </nav>
+    <div class="index-content">
+        <div class="display-gallery">
+            <div class="index-img-container">
+                <img src="pic1.jpg" id="index-movie">
+                <!-- <h4 id="title">The queen's gambit</h4> -->
+                <!-- <p id="info">TV Mini-Series(2020)</p> -->
+            
+            </div>
+
+            <div class="button-container">
+                <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="index-text">
+            <h1>What to watch</h1>
+            <div class="index-sign-in">
+                <h3>Sign in to access your Watchlist</h3>
+                <p>Save shows and movies to keep track of what you want to watch</p>
+                <button id="sign-btn">Sign in to MREW</button>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <script src="navigation_app.js"></script>
+    <script src="gallery_app.js"></script>
+    
+</body>
+</html>

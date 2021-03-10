@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href="mystyle.css">
+</head>
+<body>
+    <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+         
+        <div class="logo">
+            <h3>MRew</h3>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="active" href="/">Home</a>
+            </li>
+            <li>
+                <a href = "/movies">Movies</a>
+            </li>
+            <li>
+                <a href = "/tvshows">TV Shows</a>
+            </li>
+            <li>
+                <a href="/register">Register</a>
+            </li>
+            <li>
+                <a href="/about">About Me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="/addUser" method="POST" class="register-form">
+        <h1>Register</h1>
+        <div class="form-element">
+            <label for="name">Name</label>
+            <input type="text" id="name" required name="name" placeholder="Enter name">
+        </div>
+
+        <div class="form-element">
+            <label for="email">Email</label>
+            <input type="email" required id="email" name="email" placeholder = "Enter email">
+        </div>
+
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+        </div>
+
+        <div class="form-element">
+            <label for="cpassword">Confirm password</label>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password">
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <p id="register-p">Have an account? <a href="/login">Login</a></p>
+
+
+    <script src="navigation_app.js"></script>
+    
+</body>
+</html>
